@@ -57,6 +57,9 @@ def fun4(x,y,z):
     total_sum = x + y + z
     return total_sum
 
+def power(a, b):
+    """Return a raised to the power of b"""
+    return a ** b
 
 # f1_op = fun1(2,3)
 # f2_op = fun2(2,3)
