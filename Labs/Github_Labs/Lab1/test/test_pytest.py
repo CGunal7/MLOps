@@ -1,6 +1,10 @@
 import pytest
 from src import calculator
-from Labs.Github_Labs.Lab1.calculator import *
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
+
+from calculator import *
+
 
 
 
