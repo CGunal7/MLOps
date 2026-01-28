@@ -20,8 +20,10 @@ jobs:
       run: pip install -r Labs/Github_Labs/Lab1/requirements.txt
 
     - name: Run tests and generate XML report
-      run: pytest Labs/Github_Labs/Lab1/test/test_pytest.py --junitxml=pytest-report.xml
-      continue-on-error: false
+     run: |
+      export PYTHONPATH=$PYTHONPATH:$(pwd)/Labs/Github_Labs/Lab1
+      pytest Labs/Github_Labs/Lab1/test/test_pytest.py --junitxml=pytest-report.xml
+
 
     - name: Upload test results
       if: always()
