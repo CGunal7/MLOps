@@ -1,5 +1,7 @@
 import pytest
 from src import calculator
+from calculator import *
+
 
 def test_fun1():
     assert calculator.fun1(2, 3) == 5
@@ -28,3 +30,6 @@ def test_fun4():
     
     assert calculator.fun4 (-1, -1, 100) == 98
     
+def test_power():
+    assert power(2, 3) == 8
+    assert power(5, 0) == 1
