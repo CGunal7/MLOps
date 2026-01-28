@@ -20,10 +20,11 @@ jobs:
       run: pip install -r Labs/Github_Labs/Lab1/requirements.txt
 
     - name: Run tests and generate XML report
-     working-directory: Labs/Github_Labs/Lab1
+     env:
+       PYTHONPATH: ${{ github.workspace }}
      run: |
-      export PYTHONPATH=$PYTHONPATH:$(pwd)/src
-      pytest test/test_pytest.py --junitxml=pytest-report.xml
+       pytest Labs/Github_Labs/Lab1/test/test_pytest.py --junitxml=pytest-report.xml
+
 
 
 
