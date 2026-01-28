@@ -1,6 +1,7 @@
 import pytest
 from src import calculator
-from calculator import *
+from Labs.Github_Labs.Lab1.calculator import *
+
 
 
 def test_fun1():
