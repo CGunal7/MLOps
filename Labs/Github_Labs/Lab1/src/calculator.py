@@ -66,3 +66,14 @@ def power(a, b):
 # f3_op = fun3(2,3)
 # f4_op = fun4(f1_op,f2_op,f3_op)
 
+def fun5(x, y):
+    """Division"""
+    if y == 0:
+        return "Error: Division by zero"
+    return x / y
+
+def fun6(x):
+    """Square"""
+    return x * x
+
+
